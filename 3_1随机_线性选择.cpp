@@ -2,8 +2,10 @@
 #include <cstring>
 #include <cstdlib>
 #include <random>
-#include "bs2.h"
 using namespace std;
+#define max_n 1000000
+
+int num[max_n + 5] = {0};
 
 void swap(int &a, int &b) {
     int tmp = a;
@@ -39,9 +41,10 @@ int select(int *num, int l, int r, int k) {
 }
 
 int main() {
-    int k;
+    int k, i = -1;
     cin >> k;
-    int len = sizeof(num) / sizeof(num[0]);
+    while (~scanf("%d", &num[++i]));
+    int len = i;
     cout << select(num, 0, len - 1, k) << endl;
     return 0;
 }

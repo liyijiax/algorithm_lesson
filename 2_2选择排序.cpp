@@ -22,18 +22,20 @@ void swap(int &a, int &b) {
 
 int main() {
     int i = -1;
-    while (~scanf("%d"), &num[++i]);
-    int len = i + 1;
+    while (~scanf("%d", &num[++i]));
+    int len = i;
     for (int i = 0; i < len; i++) {
-        int max = i;
+        int min = i;
         for (int j = i; j < len; j++) {
-            if (num[j] > num[max]) max = j;
+            if (num[j] < num[min]) min = j;
         }
-        swap(num[max], num[i]);
+        swap(num[min], num[i]);
     }
     for (int i = 0; i < len; i++) {
         i && cout << " ";
         cout << num[i];
     }
+    //cout << endl;
+    //cout << "sum: " << len << endl;
     return 0;
 }
