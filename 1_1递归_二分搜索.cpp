@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include "bs1.h"
+#include <cstdio>
 using namespace std;
 
 
@@ -15,7 +15,7 @@ int binary_search(int *num, int l, int r, int obj) {
 	}
 	return 0;
 }
-
+/*
 //非递归
 int binary_search(int *num, int l, int r, int obj) {
     while (l <= r) {
@@ -25,13 +25,13 @@ int binary_search(int *num, int l, int r, int obj) {
         else r = mid - 1;
     }
     return 0;
-}
+}*/
 
 int main() {
-    int obj;
+    int obj, i = -1;
     cin >> obj;
-    int len = sizeof(num) / sizeof(num[0]);
-    cout << len << endl;
+    while (~scanf("%d", &num[++i]));
+    int len = i;
     int ans = binary_search(num, 0, len - 1, obj);
     cout << ans + 1;
     return 0;
