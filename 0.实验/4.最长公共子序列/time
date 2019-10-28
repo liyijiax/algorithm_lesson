@@ -1,0 +1,128 @@
+lyj@envy:~/Algorithm/0.实验/4.最长公共子序列$ ./5.数据生成与测试.sh 4.备忘录.cpp 
+1
+M: 10 N: 10 M*N: 100
+2
+real	0m0.577s
+user	0m0.437s
+sys	0m0.140s
+
+2
+M: 50 N: 10 M*N: 500
+4
+real	0m0.568s
+user	0m0.424s
+sys	0m0.144s
+
+3
+M: 250 N: 10 M*N: 2500
+7
+real	0m0.568s
+user	0m0.432s
+sys	0m0.136s
+
+4
+M: 1250 N: 10 M*N: 12500
+10
+real	0m0.568s
+user	0m0.420s
+sys	0m0.148s
+
+5
+M: 6250 N: 10 M*N: 62500
+10
+real	0m0.565s
+user	0m0.393s
+sys	0m0.172s
+
+6
+M: 31250 N: 10 M*N: 312500
+10
+real	0m0.568s
+user	0m0.435s
+sys	0m0.132s
+
+7
+M: 156250 N: 10 M*N: 1562500
+10
+real	0m0.569s
+user	0m0.381s
+sys	0m0.188s
+
+lyj@envy:~/Algorithm/0.实验/4.最长公共子序列$ vim 5.数据生成与测试.sh 
+lyj@envy:~/Algorithm/0.实验/4.最长公共子序列$ ./5.数据生成与测试.sh 3.直接递归.cpp 
+1
+M: 10 N: 10 M*N: 100
+3
+real	0m0.001s
+user	0m0.002s
+sys	0m0.000s
+
+2
+M: 50 N: 10 M*N: 500
+4
+real	1m0.262s
+user	1m0.259s
+sys	0m0.000s
+
+3
+M: 250 N: 10 M*N: 2500
+^C
+lyj@envy:~/Algorithm/0.实验/4.最长公共子序列$ ./5.数据生成与测试.sh 1.动态规划.cpp 
+1
+M: 10 N: 10 M*N: 100
+J
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+2
+M: 50 N: 10 M*N: 500
+aGc
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+3
+M: 250 N: 10 M*N: 2500
+AwXzhVwv
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+4
+M: 1250 N: 10 M*N: 12500
+mwCqiLDHs
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.000s
+
+5
+M: 6250 N: 10 M*N: 62500
+wFzfVuVgw
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+
+6
+M: 31250 N: 10 M*N: 312500
+wPqHOZGvO
+
+real	0m0.022s
+user	0m0.008s
+sys	0m0.015s
+
+7
+M: 156250 N: 10 M*N: 1562500
+trFgdMalb
+
+real	0m0.103s
+user	0m0.040s
+sys	0m0.063s
+
+lyj@envy:~/Algorithm/0.实验/4.最长公共子序列$ 
+
