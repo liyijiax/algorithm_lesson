@@ -1,6 +1,6 @@
 #!/bin/bash
 
-op=5
+op=1
 
 m=10
 n=100

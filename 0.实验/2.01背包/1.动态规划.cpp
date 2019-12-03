@@ -31,8 +31,8 @@ int main()
 
     cout << "DP最大价值" << endl;
     cout << dp[cnt][bagV + 1] << endl;
-for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 9; j++) {
+for (int i = 0; i < cnt; i++) {
+		for (int j = 0; j < bagV; j++) {
 			cout << dp[i][j] << ' ';
 		}
 		cout << endl;

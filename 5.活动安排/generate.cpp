@@ -1,8 +1,8 @@
 /*************************************************************************
-	> File Name: 0.生成.cpp
+	> File Name: generate.cpp
 	> Author: liyijia
 	> Mail: liyijiax@163.com
-	> Created Time: 2019年10月29日 星期二 02时14分19秒
+	> Created Time: 2019年11月04日 星期一 20时42分04秒
  ************************************************************************/
 
 #include <iostream>
@@ -14,18 +14,14 @@
 using namespace std;
 
 int main() {
-    int cnt;
-    cin >> cnt;
     srand(time(0));
-    cout << endl;
-    for (int i = 0; i < cnt; i++) {
-        int tmp = rand() % 100;
-        cout << tmp << " ";
-    }
-    cout << endl;
-    for (int i = 0; i < cnt; i++) {
-        int tmp = rand() % 100;
-        cout << tmp << " ";
+    int max_op;
+    cin >> max_op;
+    printf("%d\n", max_op);
+    for (int i = 0; i < max_op; i++) {
+        int s = rand() % 1000;
+        int f = s + rand() % 100;
+        printf("%d %d %d\n", i, s, f);
     }
     return 0;
 }
